@@ -75,15 +75,10 @@ func write(conn net.Conn, body string) {
 </html>`, body)
 
 	//headers
-	if body == "404" {
-		fmt.Fprintf(conn, "HTTP/1.1 404 NOTFOUND\r\n")
-	} else {
-		fmt.Fprintf(conn, "HTTP/1.1 200 OK\r\n")
 
-	}
+	fmt.Fprintf(conn, "HTTP/1.1 200 OK\r\n")
 	fmt.Fprintf(conn, "Content-Length : %d\r\n", len(html))
 	fmt.Fprintf(conn, "Content-Type : text/html\r\n")
-
 	fmt.Fprintf(conn, "\r\n")
 
 	//body

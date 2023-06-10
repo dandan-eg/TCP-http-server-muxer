@@ -7,7 +7,7 @@ import (
 )
 
 func routes() muxer.Muxer {
-	m := muxer.NewMuxer()
+	m := muxer.New()
 
 	m.Add("GET", "/", template.Home)
 	m.Add("GET", "/account", template.Account)

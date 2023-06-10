@@ -9,7 +9,7 @@ import (
 
 type Muxer []Route
 
-func NewMuxer() Muxer {
+func New() Muxer {
 	return make(Muxer, 0, 0)
 }
 
