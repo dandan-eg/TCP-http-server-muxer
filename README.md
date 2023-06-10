@@ -1,6 +1,6 @@
 # TCP Server HTTP muxer
 
-TCP Server HTTP is a simple HTTP server implemented in Go. It listens for incoming TCP connections on port 8080 and
+TCP Server HTTP muxer is a simple HTTP server implemented in Go. It listens for incoming TCP connections on port 8080 and
 handles HTTP requests by routing them to the appropriate handlers.
 
 ## Purpose
